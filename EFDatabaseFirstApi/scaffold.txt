@@ -1,0 +1,22 @@
+CREATE DATABASE ShopDbDatabaseFirst;
+GO
+
+USE ShopDbDatabaseFirst;
+GO
+
+CREATE TABLE Categories (
+    CategoryId INT PRIMARY KEY IDENTITY(1,1),
+    Name NVARCHAR(100) NOT NULL
+);
+
+CREATE TABLE Products (
+    ProductId INT PRIMARY KEY IDENTITY(1,1),
+    Name NVARCHAR(100) NOT NULL,
+    Price DECIMAL(18,2) NOT NULL,
+    CategoryId INT FOREIGN KEY REFERENCES Categories(CategoryId)
+);
+
+
+
+
+dotnet ef dbcontext scaffold "Server=localhost;Database=ShopDbDatabaseFirst;Trusted_Connection=True;TrustServerCertificate=True;" Microsoft.EntityFrameworkCore.SqlServer -o Models -c ShopContext

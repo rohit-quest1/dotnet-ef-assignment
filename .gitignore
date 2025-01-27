@@ -1,0 +1,56 @@
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+[Bb]in/
+[Oo]bj/
+*.dll
+*.exe
+*.pdb
+*.appx
+*.appxbundle
+*.appxupload
+*.msix
+*.msixbundle
+*.msixupload
+*.nupkg
+*.snupkg
+
+# Visual Studio Code
+.vscode/
+
+# Rider
+.idea/
+
+# ASP.NET
+appsettings*.json
+*.db
+*.db-journal
+*.log
+*.vspscc
+*.vssscc
+
+# Azure
+*.publishsettings
+*.azurePubxml
+
+# Other
+*.cache
+*.tmp
+*.temp
+*.log
+*.tlog
+*.dSYM/
+*.DS_Store
+*.scc
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
